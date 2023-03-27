@@ -5,7 +5,7 @@ import time
 mqttBroker = "mqtt.eclipseprojects.io"
 client = mqtt.Client("Temperature_Inside")
 client.connect(mqttBroker)
-
+#Similar to Socket.Io 
 while True:
     randNumber = uniform(20.0, 21.0)
     client.publish("TEMPERATURE", randNumber)
